@@ -29,7 +29,10 @@ function showSamples(selection) {
       case "art":
 samples.innerHTML =
       '<img src="photos/melting.png" alt="Oct 13, 2022">';
-      break;
+        break;
+      case "tumblrThemes":
+        // add tumblr themes later
+        break;
       default:
         samples.innerHTML = '<p id="change"> </p>'
         break;

@@ -7,6 +7,10 @@ button {
    background-color: #ECC8C7;
 }
 
+h1 {
+   text-align: center;
+}
+
 embed {
    height: 50%;
    width: 95%;
@@ -15,6 +19,11 @@ embed {
 img {
    height: auto;
    width: 50%;
+}
+
+.expand {
+   /* embeds and art should smoothly load in */
+   transition: .5s;
 }
 
 .hidden {
