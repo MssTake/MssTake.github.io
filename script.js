@@ -22,7 +22,7 @@ function showSamples(selection) {
     switch (selection) {
     case "webApplications":
       samples.innerHTML =
-      '<embed src="https://msstake.github.io/PantherLoungeDatabase"> </br> <button> <a target="_blank" href="https://msstake.github.io/PantherLoungeDatabase>Open in a new window</a></button>';
+      '<a target="_blank" href="https://msstake.github.io/PantherLoungeDatabase><embed src="https://msstake.github.io/PantherLoungeDatabase"></a>';
       break;
       case "art":
 samples.innerHTML =
