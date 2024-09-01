@@ -1,0 +1,69 @@
+<html>
+
+<head>
+   <title>Portfolio</title>
+   <link rel="favicon" href="" />
+   <link id="theme" rel="stylesheet" type="text/css" href="style.css" />
+   <script src="script.js"></script>
+</head>
+
+<header>
+   <h1>Mia Dattis</h1>
+   <p>
+      [this site is under construction]
+   </p>
+   <p> <a target="_blank" href="https://www.fit.edu/programs/software-engineering-bs/">
+         Software Engineering Undergraduate, Florida Institute of Technology</a>
+   </p>
+   <p>
+      <a target="_blank" href="https://www.ntatutor.com">
+         National Tutoring Association Certified
+      </a>
+   </p>
+   <a target="_blank" href="https://github.com/MssTake">
+      GitHub
+   </a>
+   <button class="dropdown">
+      Tutoring
+      <div class="hidden">
+         <a target="_blank" href="https://cs.fit.edu/~pkc/dept/csHelpDesk.html">
+            Florida Tech Students
+         </a>
+         <a href="mailto:mldattis@gmail.com">
+            Private Tutoring
+         </a>
+      </div>
+   </button>
+</header>
+
+<body class="home">
+
+   <!-- show work samples -->
+   <button onclick="showSamples('webApplications')">
+      Web Applications
+   </button>
+
+   <button onclick="showSamples('art')">
+      Art Samples
+   </button>
+
+   <!-- this is where the samples will be displayed -->
+   <p id="change"> </p>
+</body>
+
+<footer>
+   <p>
+      Style this site:
+   </p>
+   <button onclick="changeTheme('artDeco')">
+      Art Deco
+   </button>
+   <button disabled onclick="changeTheme('minimalist')">
+      Minimalist
+   </button>
+   <button disabled onclick="changeTheme('typographic')">
+      Typographic
+   </button>
+</footer>
+
+</html>
