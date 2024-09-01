@@ -1,11 +1,20 @@
+body {
+   background-color: #8B759E;
+   font-family: AndaleMono, "Andale Mono", monospace;
+}
+
+button {
+   background-color: #ECC8C7;
+}
+
 embed {
    height: 50%;
-   width: 75%;
+   width: 95%;
 }
 
 img {
-   height: 50%;
-   width: 75%;
+   height: auto;
+   width: 50%;
 }
 
 .hidden {
