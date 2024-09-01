@@ -1,0 +1,56 @@
+a {
+   color: black;
+   display: block;
+   font-weight: bold;
+   margin: 10px;
+   text-decoration: none;
+   transition: 0.5s;
+}
+
+body {
+   background-image: url("themes/art deco/Murals Your Way.jpg");
+   font-family: Courier, sans-serif;
+   transition: 0.5s;
+   margin: 25px;
+   max-width: 100%;
+   min-width: 95%;
+}
+
+button {
+   border: double rgb(190, 167, 121);
+   cursor: pointer;
+   height: 25px;
+   transition: 0.5s;
+}
+
+button:hover {
+   background: none;
+   background-color: DarkKhaki;
+   box-shadow: rgb(63, 55, 40);
+}
+
+h1 {
+   font-family: ironick;
+   letter-spacing: normal;
+   margin-bottom: 10px;
+   text-align: center;
+   text-shadow: -3px 3px DarkKhaki;
+}
+
+header {
+   border: double rgb(190, 167, 121);
+   display: block;
+   justify-content: center;
+   margin-bottom: 25px;
+   margin-top: 25px;
+}
+
+p {
+   color: black;
+   margin: 10px;
+}
+
+@font-face {
+   font-family: ironick;
+   src: url(themes/art\ deco/ironick-normal.regular.ttf);
+}
