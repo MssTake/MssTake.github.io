@@ -1,0 +1,20 @@
+.hidden {
+   display: none;
+   margin-bottom: 10px;
+   padding: 0;
+   position: static;
+   z-index: 1;
+}
+
+.hidden a {
+   display: block;
+}
+
+.dropdown {
+   transition: 0.5s;
+}
+
+.dropdown:hover .hidden {
+   height: auto;
+   display: block;
+}
