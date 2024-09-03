@@ -17,11 +17,18 @@
 - make a credits page for the wallpapers
 ## Style
 - make the inital theme look like your clicking things on a laptop
+- save space for copies of my diplomas (eventually)
+### Body
+- bio should look like a blog window
+- skills overview should be visible in the "blog" window
+- past experience should be accessible through an icon on the screen
+- resume downloard prompt should be accessible through an icon on the screen
+- tumblr themes should be accessible through an icon on the screen
+### Footer
+- footer should look like a desk
 - tutor page should be accessible through a book
 - art should be accessible through a sketchbook button
-- tumblr themes should be accessible through an icon on the screen
-- resume downloard prompt should look like a virus
-- finialize primary theme sheet
+
 ## Work Samples
 - find more work/code samples
 - tumblr themes, if you ever make them
