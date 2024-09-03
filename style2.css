@@ -27,7 +27,7 @@ p {
    padding-left: 25px;
    padding-right: 25px;
    padding-top: 40px;
-   width: 35em;
+   width: 40em;
 }
 
 /* computer screen div */
@@ -36,5 +36,5 @@ p {
    border: 25px groove lightgray;
    height: 35em;
    margin-left: 50px;
-   width: 50em;
+   width: 60em;
 }
