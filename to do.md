@@ -26,6 +26,8 @@
 
 - make the inital theme look like your clicking things on a laptop
 - save space for copies of my diplomas (eventually)
+- put a rubber duck on the desk
+- the site is really ugly when resized. "lock the computer" until it is resized past a certain point
 
 ### Body
 
@@ -34,6 +36,8 @@
 - resume downloard prompt should be accessible through "toolbar"
 - archived projects should be accessible through through "toolbar"
 - tumblr themes should be accessible through "toolbar"
+- font changer should be accessible through "toolbar"
+- a pop-up encouraging people to resize the window. pop-up should leave the frame when the window is resized
 
 ### Footer
 

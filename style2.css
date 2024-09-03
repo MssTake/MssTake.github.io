@@ -1,5 +1,40 @@
+body {
+   font-family: monospace;
+}
+
+header {
+   margin-top: 5em;
+}
+
+p {
+   margin: 0px;
+}
+
+/* short biography */
+#bio {
+   width: 20em;
+}
+
+/* bio window div */
+/* make a window title bar */
+#bioWindow {
+   border: 1px solid lightgray;
+   border-radius: 10px;
+   box-shadow: 2px 2px 5px #332B39;
+   margin-left: 35px;
+   margin-top: 35px;
+   padding-bottom: 25px;
+   padding-left: 25px;
+   padding-right: 25px;
+   padding-top: 40px;
+   width: 35em;
+}
+
 /* computer screen div */
 #computer {
    background-clip: content-box;
-   border: 50px groove lightgray;
+   border: 25px groove lightgray;
+   height: 35em;
+   margin-left: 50px;
+   width: 50em;
 }
