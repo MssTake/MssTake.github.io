@@ -1,0 +1,5 @@
+/* computer screen div */
+#computer {
+   background-clip: content-box;
+   border: 50px groove lightgray;
+}
