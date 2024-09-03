@@ -28,6 +28,8 @@
 - save space for copies of my diplomas (eventually)
 - put a rubber duck on the desk
 - the site is really ugly when resized. "lock the computer" until it is resized past a certain point
+- give the fake screen a tint when background is added
+- change cursor when you enter the screen <div>
 
 ### Body
 
