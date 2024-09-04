@@ -2,7 +2,7 @@
 
 - [Looka](https://looka.com/blog/graphic-design-styles/#stepthree)
 - [thenounproject](https://blog.thenounproject.com/graphic-design-styles/)
-
+- [A SIngle DIv Tutorial](https://hacks.mozilla.org/2014/09/single-div-drawings-with-css/)
 # Things to Do
 
 ## Function
@@ -19,6 +19,7 @@
 
 - consider humanizing yourself in the bio
 - picture of yourself
+- add link to senior project https://www.fit.edu/student-design-showcase/showcase-2024/electrical-engineering-and-computer-science/
 - add a link to your instagram when you add more photos to it
 - make a credits page for the wallpapers
 

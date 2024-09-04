@@ -6,12 +6,20 @@ header {
    margin-top: 5em;
 }
 
+h1 {
+   font-size: 35px;
+}
+
 p {
+   font-family: cousine;
    margin: 0px;
 }
 
 /* short biography */
 #bio {
+   font-size: 10px;
+   height: 125px;
+   overflow-x: scroll;
    width: 20em;
 }
 
@@ -37,4 +45,9 @@ p {
    height: 35em;
    margin-left: 50px;
    width: 60em;
+}
+
+@font-face {
+   font-family: cousine;
+   src: url(themes/default/cousine/Cousine-Regular.ttf);
 }
