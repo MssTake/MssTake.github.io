@@ -21,6 +21,30 @@ h1 {
    margin-bottom: 5px;
 }
 
+/* sliders indicating skill */
+/* input[type="range"] {
+   appearance: none;
+   background: none;
+   display: block;
+   height: 5px;
+   width: 5px;
+   -webkit-appearance: none;
+} */
+
+/* input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+   height: 5px;
+   width: 5px;
+   -webkit-appearance: none;
+} */
+
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-moz-range-track{
+   background: linear-gradient(to right, black, lightgray);
+   block-size: auto;
+   -webkit-mask: repeat left center/20% url(icons/star.png);
+}
+
 /* toolbar */
 nav {
    background-color: #514e5585;
@@ -108,9 +132,10 @@ p {
 }
 
 #stats {
-   height: 15em;
+   height: 125px;
    float: right;
    width: 10em;
+   overflow-x: scroll;
 }
 
 @font-face {
