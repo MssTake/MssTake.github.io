@@ -1,4 +1,5 @@
 body {
+   background-color: #8B759E;
    font-family: monospace;
 }
 
@@ -12,20 +13,34 @@ h1 {
 
 p {
    font-family: cousine;
+   font-size: 15px;
    margin: 0px;
+   width: 275px;
 }
 
-/* short biography */
+.desktop-icon {
+   float: right;
+   margin-right: 10px;
+   margin-top: 35px;
+   width: 125px;
+}
+
+.social-media {
+   height: 20px;
+}
+
+/* short biography detailing academic background */
 #bio {
-   font-size: 10px;
-   height: 125px;
+   font-size: 12.5px;
+   height: 100px;
    overflow-x: scroll;
    width: 20em;
 }
 
 /* bio window div */
 /* make a window title bar */
-#bioWindow {
+#bio-window {
+   background-color: aliceblue;
    border: 1px solid lightgray;
    border-radius: 10px;
    box-shadow: 2px 2px 5px #332B39;
@@ -41,10 +56,18 @@ p {
 /* computer screen div */
 #computer {
    background-clip: content-box;
-   border: 25px groove lightgray;
+   background-color: darkblue;
+   border: 25px groove darkgray;
    height: 35em;
    margin-left: 50px;
    width: 60em;
+}
+
+#stats {
+   height: 15em;
+   float: right;
+   margin-right: 100px;
+   width: 10em;
 }
 
 @font-face {
