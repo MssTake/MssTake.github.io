@@ -1,5 +1,10 @@
+a {
+   color: #9abcc5;
+}
+
 body {
-   background-color: #8B759E;
+   background-color: #4f2e5f;
+   color: gainsboro;
    font-family: monospace;
 }
 
@@ -8,14 +13,15 @@ header {
 }
 
 h1 {
-   font-size: 35px;
+   font-size: 25px;
+   margin-bottom: 5px;
 }
 
 p {
    font-family: cousine;
-   font-size: 15px;
+   font-size: 12.5px;
    margin: 0px;
-   width: 275px;
+   width: 225px;
 }
 
 .desktop-icon {
@@ -32,41 +38,43 @@ p {
 /* short biography detailing academic background */
 #bio {
    font-size: 12.5px;
-   height: 100px;
+   height: 55px;
    overflow-x: scroll;
    width: 20em;
 }
 
 /* bio window div */
 /* make a window title bar */
-#bio-window {
-   background-color: aliceblue;
-   border: 1px solid lightgray;
+#window {
+   background-image: linear-gradient(to bottom, #6f4668, #70486a);
+   border: .05px solid #4f4753;
    border-radius: 10px;
-   box-shadow: 2px 2px 5px #332B39;
+   box-shadow: 10px 10px 10px #332B39;
+   height: 12.5em;
    margin-left: 35px;
    margin-top: 35px;
    padding-bottom: 25px;
    padding-left: 25px;
    padding-right: 25px;
    padding-top: 40px;
-   width: 40em;
+   width: 30em;
 }
 
 /* computer screen div */
 #computer {
    background-clip: content-box;
-   background-color: darkblue;
-   border: 25px groove darkgray;
-   height: 35em;
+   background-image: linear-gradient(to bottom, #5c3f69 75%, #90b892);
+   border: 25px groove #383b3e;
+   box-shadow: 5px 5px 50px 10px #62b8a1;
+   height: 25em;
    margin-left: 50px;
-   width: 60em;
+   width: 50em;
+
 }
 
 #stats {
    height: 15em;
    float: right;
-   margin-right: 100px;
    width: 10em;
 }
 
