@@ -8,6 +8,10 @@ body {
    font-family: monospace;
 }
 
+footer {
+   background-color: #8aa43c;
+}
+
 header {
    margin-top: 5em;
 }
@@ -15,6 +19,16 @@ header {
 h1 {
    font-size: 25px;
    margin-bottom: 5px;
+}
+
+/* toolbar */
+nav {
+   background-color: #514e5585;
+   border-radius: 5px;
+   margin-left: 25px;
+   margin-top: 21.5px;
+   height: 40px;
+   width: 595.5px;
 }
 
 p {
@@ -29,6 +43,27 @@ p {
    margin-right: 10px;
    margin-top: 35px;
    width: 125px;
+}
+
+.tooltip {
+   /* margin-left: 50px; */
+   width: 5px;
+   translate: 275px 10px;
+}
+
+.tooltip:hover .tooltip-text {
+   visibility: visible;
+}
+
+.tooltip-text {
+   background-color: #2f2e389e;
+   border-radius: 5px;
+   border: solid 2.5px #2f2e389e;
+   color: antiquewhite;
+   position: absolute;
+   top: -25px;
+   translate: -20px;
+   visibility: hidden;
 }
 
 .social-media {
