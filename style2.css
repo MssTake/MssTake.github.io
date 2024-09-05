@@ -3,13 +3,27 @@ a {
 }
 
 body {
-   background-color: #4f2e5f;
+   background-color: #573954;
    color: gainsboro;
    font-family: monospace;
+   overflow-y: hidden;
 }
 
+button {
+   background: none;
+   border: none;
+}
+
+/* this is the desk */
 footer {
-   background-color: #8aa43c;
+   background-color: #4a5154;
+   height: 150px;
+   margin-bottom: 0px;
+   margin-left: 0px;
+   margin-right: 0px;
+   margin-top: 110px;
+   translate: -10px;
+   width: 115em;
 }
 
 header {
@@ -64,9 +78,13 @@ p {
 
 .desktop-icon {
    float: right;
-   margin-right: 10px;
+   margin-right: -10px;
    margin-top: 35px;
    width: 125px;
+}
+
+.desktop-icon p {
+   translate: -10px;
 }
 
 .tooltip {
@@ -105,7 +123,7 @@ p {
 /* bio window div */
 /* make a window title bar */
 #window {
-   background-image: linear-gradient(to bottom, #6f4668, #70486a);
+   background-image: linear-gradient(to bottom, #574870 25%, #412872);
    border: .05px solid #4f4753;
    border-radius: 10px;
    box-shadow: 10px 10px 10px #332B39;
@@ -122,9 +140,9 @@ p {
 /* computer screen div */
 #computer {
    background-clip: content-box;
-   background-image: linear-gradient(to bottom, #5c3f69 75%, #90b892);
+   background-image: linear-gradient(to bottom, #423668 75%, #90b892);
    border: 25px groove #383b3e;
-   box-shadow: 5px 5px 50px 10px #62b8a1;
+   box-shadow: 5px 5px 50px 10px #629ab8ac;
    height: 25em;
    margin-left: 50px;
    width: 50em;
