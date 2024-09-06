@@ -1,15 +1,3 @@
-add mailing address to top of resume
-make github logo larger
-add classes & club years/position
-tutor in experience
-soft skill in skills
-take key words from job desc, swap out when needed
-exp at top
-software engineering intern MO change title
-figue out more-sepicifc title for AKF
-add year for both months
-more key words in experince. add more detials
-add more projects, class, & title if gorup project
 
 # Design Styles
 

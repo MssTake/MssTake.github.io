@@ -157,16 +157,16 @@ p {
 #notebook {
    background-image: linear-gradient(to bottom, #9a74b2, #552572);
    height: 80px;
-   translate: 60em -50px;
+   translate: 60em -15px;
    width: 40em;
 }
 
 #sketchbook {
    background-image: linear-gradient(to bottom, #6a56aa, #2c1c62);
       height: 80px;
-         translate: -70px -100px;
+         translate: -70px -80px;
          width: 40em;
-         rotate: 340deg;
+         rotate: 345deg;
 }
 
 #stats {
