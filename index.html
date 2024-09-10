@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -6,88 +7,105 @@
    <link id="theme" rel="stylesheet" type="text/css" href="style.css" />
    <script src="script.js"></script>
 </head>
+<header></header>
 
-<header>
-   <h1>
-      Mia Dattis
-   </h1>
+<body onload="seeDesk()">
 
-   <!-- accreditation -->
-   <p>
-      [this site is under construction]
-   </p>
-   <p>
-      <a target="_blank" href="https://www.fit.edu/programs/software-engineering-bs/">
-         Software Engineering Undergraduate, Florida Institute of Technology
+   <!-- add some windows and plants in the background -->
+
+   <!-- computer screen -->
+   <div id="computer">
+
+      <!-- "desktop icons" -->
+      <!-- resume -->
+      <a class="desktop-icon" href="PDFs/Mia_Dattis_Resume_Aug_2023.pdf" download>
+         <img src="icons/temp-icon.jpg">
+         <p>Resume</p>
       </a>
-   </p>
-   <p>
-      <a target="_blank" href="https://www.ntatutor.com">
-         National Tutoring Association Certified
-      </a>
-   <p>
-      Monospace Font Enthusiast
-   </p>
 
-   <!-- personal/contact links -->
-   <button>
-      <a target="_blank" href="https://github.com/MssTake">
-         GitHub
-      </a>
-   </button>
+      <!-- main window -->
+      <div id="window">
 
-   <button class="dropdown">
-      Tutoring
-      <div class="hidden">
-         <a target="_blank" href="https://cs.fit.edu/~pkc/dept/csHelpDesk.html">
-            Florida Tech Students
-         </a>
-         <a href="mailto:mldattis@gmail.com">
-            Private Tutoring
-         </a>
+         <!-- bio & academic background -->
+         <h1>Mia Dattis</h1>
+         <!-- "stats" -->
+         <div id="stats">
+            <label for="adaptability">Adaptability</label>
+            <input disabled type="range" name="adaptability" min="0" max="5" value="4">
+            <label for="creativity">Creativity</label>
+            <input disabled type="range" name="creativity" min="0" max="5" value="5">
+            <label for="user-experience">User Experience</label>
+            <input disabled type="range" name="user-experience" min="0" max="5" value="4">
+            <label for="agile">Agile</label>
+            <input disabled type="range" name="Agile" min="0" max="5" value="3">
+            <label for="cyber-security">Cyber Security</label>
+            <input disabled type="range" name="cyber-security" min="0" max="5" value="2">
+         </div>
+         <!-- Github Link -->
+         <a target="_blank" href="https://github.com/MssTake">
+            <img class="social-media" src="icons/git-hub.png"></a>
+         <!-- Instagram link -->
+         <img class="social-media" src="icons/instagram.png">
+         <p>Software Engineering Student</p>
+         <p>Monospace font enthusiast</p>
+         <br>
+
+         <!-- bio -->
+         <p id="bio">
+            Mia Dattis is an undergraduate student studying <a target="_blank"
+               href="https://www.fit.edu/programs/software-engineering-bs/"> Software
+               Engineering at Florida Institite of Technology</a> (Florida Tech). Dattis has earned <a target="_blank"
+               href="https://www.ntatutor.com">National Tutoring Association Certification</a> while working at the
+            Student Success and Support Center's <a target="_blank"
+               href="https://cs.fit.edu/~pkc/dept/csHelpDesk.html">CS Help Desk</a> as part of <a target="_blank"
+               href="https://cs.fit.edu/~pkc/upe/">Florida Tech's Upsilon Pi
+               Epsilon chpater</a>.
+            <!-- latest experience 1 -->
+            <!-- latest experience 2 -->
+            <!-- latest experience 3 -->
+         </p>
       </div>
-   </button>
-
-   <!-- make a button for downloading resume -->
-   <button>
-      <a href="PDFs/Resume.pdf" download>
-         Resume (last updated August 2023)
-      </a>
-   </button>
-</header>
-
-<body class="home">
-
-   <!-- show work samples -->
-   <button onclick="showSamples('webApplications')">
-      Web Applications
-   </button>
-
-   <button onclick="showSamples('art')">
-      Art Samples
-   </button>
-
-   <button disabled onclick="showSamples('tumblrThemes')">
-      Themes for tumblr
-   </button>
-
-   <!-- this is where the samples will be displayed -->
-   <p id="change"> </p>
+      <!-- toolbar -->
+      <nav>
+         <!-- add "project archive" button -->
+         <button class="tooltip">
+            <span class="tooltip-text">Archive</span>
+            <img src="icons/temp-icon.jpg">
+         </button>
+         <!-- add "see themes" button -->
+         <button class="tooltip">
+            <span class="tooltip-text">Themes</span>
+            <img src="icons/temp-icon.jpg">
+         </button>
+      </nav>
+   </div>
 </body>
 
 <footer>
-   <p>
-      Style this site:
-   </p>
-   <button onclick="changeTheme('artDeco')">
-      Art Deco
+   <!-- make this look like a desk -->
+   <!-- tutoring resources -->
+   <button id="notebook" onclick="openBook('notebook')">
+      For Tutors
    </button>
-   <button disabled onclick="changeTheme('minimalist')">
-      Minimalist
+
+   <div id="open-notebook">
+      <button onclick="closeBook('notebook')">X</button>
+      <p>
+         Coming soon
+      </p>
+   </div>
+
+   <!-- art samples -->
+   <button id="sketchbook" onclick="openBook('sketchbook')">
+      Art Samples
    </button>
-   <button disabled onclick="changeTheme('typographic')">
-      Typographic
-   </button>
+
+      <div id="open-sketchbook">
+      <button onclick="closeBook('sketchbook')">X</button>
+      <p>
+         Coming soon
+      </p>
+   </div>
 </footer>
 
 </html>

@@ -28,7 +28,7 @@ async function closeBook(book) {
   bookContent.style.transform = "translatey(60em)"
   await delay (500)
   // book covr reappears on stack
-  chosenBook.style.transform = "translatey(-20em)"
+  chosenBook.style.transform = "translatey(-.015em)"
   await delay (500)
 }
 
@@ -75,8 +75,8 @@ samples.innerHTML =
   }
 }
 
-// function seeDesk() {
-//   if (window.outerWidth < 1381) {
-//     alert("resize")
-//   }
-// }
+function seeDesk() {
+  if (window.outerWidth < 1000) {
+    alert("Can't see the desk? Try resizing")
+  }
+}
