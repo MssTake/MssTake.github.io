@@ -6,14 +6,18 @@ body {
    background-color: #573954;
    color: gainsboro;
    font-family: monospace;
-   overflow-x: hidden;
-   overflow-y: hidden;
+   overflow: hidden;
    width: 110em;
 }
 
 button {
    background: none;
    border: none;
+   transition: .5s;
+}
+
+div {
+   transition: .5s;
 }
 
 /* this is the desk */
@@ -152,21 +156,31 @@ p {
    height: 30em;
    margin-left: 50px;
    width: 60em;
+   z-index: 1;
 }
 
 #notebook {
    background-image: linear-gradient(to bottom, #9a74b2, #552572);
    height: 80px;
-   translate: 60em -15px;
-   width: 40em;
+   translate: 52.25em -5em;
+   width: 35em;
+}
+
+#open-notebook {
+   background-image: linear-gradient(to right, lightgray 50%, darkgray 10%, lightgray);
+   border-radius: 25px;
+   color: black;
+   height: 45em;
+   translate: 10em 10em;
+   width: 60em;
 }
 
 #sketchbook {
    background-image: linear-gradient(to bottom, #6a56aa, #2c1c62);
-      height: 80px;
-         translate: -70px -80px;
-         width: 40em;
-         rotate: 345deg;
+   height: 80px;
+   translate: 50.75em -60.85em;
+   width: 30em;
+   z-index: -100;
 }
 
 #stats {

@@ -1,3 +1,8 @@
+// set asymc for js delays
+async function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 // change theme
 function changeTheme(selection) {
   theme = document.getElementsByTagName('link')[1];
@@ -14,6 +19,37 @@ function changeTheme(selection) {
     default:
 
   }
+}
+
+async function closeBook(book) {
+  chosenBook = document.getElementById(book)
+  bookContent = document.getElementById('open-' + book)
+  // open book content slides off screen
+  bookContent.style.transform = "translatey(60em)"
+  await delay (500)
+  // book covr reappears on stack
+  chosenBook.style.transform = "translatey(-20em)"
+  await delay (500)
+}
+
+async function openBook(book) {
+  chosenBook = document.getElementById(book)
+  bookContent = document.getElementById('open-' + book)
+  // if (chosenBook = "notebook") {
+  //   otherBook = document.getElementById("sketchbook")
+  // }
+  // else {
+  //   otherBook = document.getElementById("notebook")
+  // }
+  // moving books in the stack
+  chosenBook.style.transform = "rotate(90deg)"
+  // otherBook.style.transform = "translatey(20em)"
+  await delay(500)
+  // slide book down off screen
+  chosenBook.style.transform = "translatey(50em)"
+  // slide open book on screen
+  await delay (500)
+  bookContent.style.transform = "translatey(-60em)"
 }
 
 // reveal samples
@@ -38,3 +74,9 @@ samples.innerHTML =
         break;
   }
 }
+
+// function seeDesk() {
+//   if (window.outerWidth < 1381) {
+//     alert("resize")
+//   }
+// }

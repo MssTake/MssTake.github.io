@@ -49,3 +49,5 @@
 # Inspiration
 
 - [emmabostian](https://github.com/emmabostian/developer-portfolios?tab=readme-ov-file)
+- https://www.w3schools.com/css/css3_animations.asp
+- https://codepen.io/lsirivong/pen/nRNLYL

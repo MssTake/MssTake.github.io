@@ -5,11 +5,11 @@
    <title>Portfolio</title>
    <link rel="favicon" href="" />
    <link id="theme" rel="stylesheet" type="text/css" href="style2.css" />
-   <script></script>
+   <script src="script.js"></script>
 </head>
 <header></header>
 
-<body>
+<body onload="seeDesk()">
 
    <!-- add some windows and plants in the background -->
 
@@ -84,14 +84,28 @@
 <footer>
    <!-- make this look like a desk -->
    <!-- tutoring resources -->
-   <button id="notebook" href="">
+   <button id="notebook" onclick="openBook('notebook')">
       For Tutors
    </button>
 
+   <div id="open-notebook">
+      <button onclick="closeBook('notebook')">X</button>
+      <p>
+         Coming soon
+      </p>
+   </div>
+
    <!-- art samples -->
-   <button id="sketchbook" href="">
+   <button id="sketchbook" onclick="openBook('sketchbook')">
       Art Samples
    </button>
+
+      <div id="open-sketchbook">
+      <button onclick="closeBook('sketchbook')">X</button>
+      <p>
+         Coming soon
+      </p>
+   </div>
 </footer>
 
 </html>
