@@ -1,82 +1,49 @@
-// set asymc for js delays
-async function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms))
+function divCloseAll() {
+   const divStyle = document.getElementsByTagName("div").style;
+      divStyle.width = "0";
+      divStyle.height = "0";
 }
 
-// change theme
-function changeTheme(selection) {
-  theme = document.getElementsByTagName('link')[1];
-  switch (selection) {
-    case "artDeco":
-      theme.href = 'artDeco.css';
-      break;
-    case "minimalist":
-      theme.href = 'minimalist.css';
-      break;
-    case "typographic":
-      theme.href = 'typographic.css';
-      break;
-    default:
+function divShow(div) {
+   // Making sure all other divs are closed first
+   // It's not working rn. fix later
+   // divCloseAll();
 
-  }
+   // Opening selected div
+   const divStyle = document.getElementById(div).style;
+   if (divStyle.width == "100%") {
+      divStyle.width = "0";
+      divStyle.height = "0";
+   }
+   else {
+      divStyle.width = "100%";
+      divStyle.height = "100%";
+   }
 }
 
-async function closeBook(book) {
-  chosenBook = document.getElementById(book)
-  bookContent = document.getElementById('open-' + book)
-  // open book content slides off screen
-  bookContent.style.transform = "translatey(60em)"
-  await delay (500)
-  // book covr reappears on stack
-  chosenBook.style.transform = "translatey(-.015em)"
-  await delay (500)
-}
+function enlarge() { }
 
-async function openBook(book) {
-  chosenBook = document.getElementById(book)
-  bookContent = document.getElementById('open-' + book)
-  // if (chosenBook = "notebook") {
-  //   otherBook = document.getElementById("sketchbook")
-  // }
-  // else {
-  //   otherBook = document.getElementById("notebook")
-  // }
-  // moving books in the stack
-  chosenBook.style.transform = "rotate(90deg)"
-  // otherBook.style.transform = "translatey(20em)"
-  await delay(500)
-  // slide book down off screen
-  chosenBook.style.transform = "translatey(50em)"
-  // slide open book on screen
-  await delay (500)
-  bookContent.style.transform = "translatey(-60em)"
-}
-
-// reveal samples
-function showSamples(selection) {
-  var samples = document.getElementById("change");
-    switch (selection) {
-      case "webApplications":
-      // when you have time, add css that,
-      // on hover:, tells users to click on the embed to open the site in another window
-      samples.innerHTML =
-      '<a target="_blank"><embed src="https://msstake.github.io/PantherLoungeDatabase"></a>';
-      break;
-      case "art":
-samples.innerHTML =
-      '<img src="photos/melting.png" alt="Oct 13, 2022">';
-        break;
-      case "tumblrThemes":
-        // add tumblr themes later
-        break;
+function showDescription(projectType, project) {
+   // I cannot use a variable in place of
+   // document.getElementById(projectType).innerHTML
+   // It's very annoying
+   const placeholder = document.getElementById(projectType).innerHTML;
+   switch (project) {
+      // Comp Sci
+      case "compSci1":
+         document.getElementById(projectType).innerHTML = "Panther Lounge Database <br> This is a wireframe of a Senior Capstone Project completed alongside David Walston and Joseph Robson. The Panther Lounge Database was designed to help club officers to administer and track items from a student-run library. This includes allowing members to check items in and out of the library in addition to letting officers add and remove available items. <br> <a href='https://msstake.github.io/PantherLoungeDatabase/index.html'>Click here to view the progress site featuring extensive documentation through the project lifespan</a>";
+         break;
+      case "compSci0":
+         document.getElementById(projectType).innerHTML = "Worse for Ware <br> Worse for Ware is a parody game based on the WarioWare series created using MASM for a computer architecture class. Like the WarioWare games, Worse for Ware features a series of simple minigames with vague instructions the player must complete before running out of time. Every time a minigame is completed, a point is added to the player's score. Every time the player fails the minigame or runs out of time, they lose a life. If the player is out of lives, the game ends, and the player recicives their final score.";
+         break;
+      // Digital Art
+      case "digiArt1":
+         document.getElementById(projectType).innerHTML = "labor. - April 11, 2026 <br> Created and later posted to Instagram, 'labor.' was traced and shaded over a painted sketch that was completed earlier on the same day. The larger figure is meant to appear as if it were sketched using graphite, similar to the original drawing. The graphite look was replicated using the peppermint pencil brush. The smaller figure was created with pencil brush, the smudge tool and some light erasing. Both the smudge and eraser tools were set to the medium airbrush brush. A heavier eraser set to the diagonal texture brush was used to go over the smaller figure once more. All tools and brushes mentioned can be found in Procreate's classic default brush set";
+         break;
+      case "digiArt0":
+         document.getElementById(projectType).innerHTML = "'melting, October 13, 2022' <br>";
+         break;
       default:
-        samples.innerHTML = '<p id="change"> </p>'
-        break;
-  }
-}
-
-function seeDesk() {
-  if (window.outerWidth < 1000) {
-    alert("Can't see the desk? Try resizing")
-  }
+         break;
+   }
 }

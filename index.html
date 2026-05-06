@@ -7,105 +7,91 @@
    <link id="theme" rel="stylesheet" type="text/css" href="style.css" />
    <script src="script.js"></script>
 </head>
-<header></header>
 
-<body onload="seeDesk()">
+<header>
+   <!-- Name and LinkedIn -->
+   <a target="_blank" href="https://www.linkedin.com/in/mia-dattis/">
+      <h1>Mia Dattis</h1>
+   </a>
+   <p>Software Engineering Student and digital octopus</p>
 
-   <!-- add some windows and plants in the background -->
+   <nav>
+      <button onclick="divShow('edu')">Show CS</button>
+      <button onclick="divShow('art')">Show Art</button>
+   </nav>
+</header>
 
-   <!-- computer screen -->
-   <div id="computer">
+<body>
 
-      <!-- "desktop icons" -->
-      <!-- resume -->
-      <a class="desktop-icon" href="PDFs/Mia_Dattis_Resume_Aug_2023.pdf" download>
-         <img src="icons/temp-icon.jpg">
-         <p>Resume</p>
-      </a>
+   <!-- Comp Sci Div -->
+   <div class="carosel" id="edu">
+      <h2>
+         <a target="_blank" href="https://github.com/MssTake/">Computer Science & Education</a>
+      </h2>
+      <a target="_blank" href="PDFs/Mia Dattis Resume.pdf">Download Resume</a>
 
-      <!-- main window -->
-      <div id="window">
-
-         <!-- bio & academic background -->
-         <h1>Mia Dattis</h1>
-         <!-- "stats" -->
-         <div id="stats">
-            <label for="adaptability">Adaptability</label>
-            <input disabled type="range" name="adaptability" min="0" max="5" value="4">
-            <label for="creativity">Creativity</label>
-            <input disabled type="range" name="creativity" min="0" max="5" value="5">
-            <label for="user-experience">User Experience</label>
-            <input disabled type="range" name="user-experience" min="0" max="5" value="4">
-            <label for="agile">Agile</label>
-            <input disabled type="range" name="Agile" min="0" max="5" value="3">
-            <label for="cyber-security">Cyber Security</label>
-            <input disabled type="range" name="cyber-security" min="0" max="5" value="2">
-         </div>
-         <!-- Github Link -->
-         <a target="_blank" href="https://github.com/MssTake">
-            <img class="social-media" src="icons/git-hub.png"></a>
-         <!-- Instagram link -->
-         <img class="social-media" src="icons/instagram.png">
-         <p>Software Engineering Student</p>
-         <p>Monospace font enthusiast</p>
-         <br>
-
-         <!-- bio -->
-         <p id="bio">
-            Mia Dattis is an undergraduate student studying <a target="_blank"
-               href="https://www.fit.edu/programs/software-engineering-bs/"> Software
-               Engineering at Florida Institite of Technology</a> (Florida Tech). Dattis has earned <a target="_blank"
-               href="https://www.ntatutor.com">National Tutoring Association Certification</a> while working at the
-            Student Success and Support Center's <a target="_blank"
-               href="https://cs.fit.edu/~pkc/dept/csHelpDesk.html">CS Help Desk</a> as part of <a target="_blank"
-               href="https://cs.fit.edu/~pkc/upe/">Florida Tech's Upsilon Pi
-               Epsilon chpater</a>.
-            <!-- latest experience 1 -->
-            <!-- latest experience 2 -->
-            <!-- latest experience 3 -->
-         </p>
+      <!-- Comp Sci Projects -->
+      <h3 onclick="divShow('compSci')">Cool Projects</h3>
+      <div class="gallery" id="compSci">
+         <iframe src="https://dwalston.github.io/Panther-Lounge-DBS/blob/public/index.html"
+            onmouseover='showDescription("compSciDesc", "compSci1")'></iframe>
+         <iframe src="https://msstake.github.io/worseForWare"
+            onmouseover="showDescription('compSciDesc', 'compSci0')"></iframe>
       </div>
-      <!-- toolbar -->
-      <nav>
-         <!-- add "project archive" button -->
-         <button class="tooltip">
-            <span class="tooltip-text">Archive</span>
-            <img src="icons/temp-icon.jpg">
-         </button>
-         <!-- add "see themes" button -->
-         <button class="tooltip">
-            <span class="tooltip-text">Themes</span>
-            <img src="icons/temp-icon.jpg">
-         </button>
-      </nav>
+      <p id="compSciDesc"></p>
+
+      <!-- Tutoring -->
+      <h3 onclick="divShow('tutor')">Tutoring Resources</h3>
+      <div class=" gallery" id="tutor">
+      </div>
+      <p id="tutoringDesc"></p>
+
+      <!-- Spreadsheets -->
+      <h3 onclick="divShow('csv')">Fun Spreadsheets</h3>
+      <div class="gallery" id="csv"></div>
+      <p id="csvDesc"></p>
    </div>
+
+   <!-- Art Div -->
+   <div class="carosel" id="art">
+      <a target="_blank" href="https://www.instagram.com/jr.cough">
+         <h2>Art</h2>
+      </a>
+      <a target="_blank" href="">Download Resume</a>
+
+      <!-- Social Media -->
+      <h3 onclick="divShow('socialMed')">Social Media & Marketing</h3>
+      <div class="gallery" id="socialMed">
+         <iframe src="Art/Social Media/Mia Dattis - Social Media Sample.MP4"></iframe>
+         <iframe src="Art/Social Media/Mia Dattis - Sample Newsletter.pdf"></iframe>
+      </div>
+      <p id="socialMedDesc"></p>
+
+      <!-- Digital Art -->
+      <h3 onclick="divShow('digiArt')">Digital Art</h3>
+      <div class="gallery" id="digiArt">
+         <img src="Art/Digital Art/Mia Dattis - labor.png" onmouseover='showDescription("digiArtDesc", "digiArt1")'>
+         <img src="Art/Digital Art/Mia Dattis - melting.png" onmouseover='showDescription("digiArtDesc", "digiArt0")'>
+      </div>
+      <p id="digiArtDesc"></p>
+
+      <!-- Fiber & Textile Arts -->
+      <h3 onclick="divShow('fiberText')">Fiber Art & Textile Arts</h3>
+      <div class="gallery" id="fiberText"></div>
+      <p id="fiberTextDesc"></p>
+
+      <!-- Fun Presentations -->
+      <h3 onclick="divShow('slide')">Fun Presentations</h3>
+      <div class="gallery" id="slide">
+         <iframe src="Art/Presentations/Old Games.pdf" onmouseover='showDescription("slideDesc", "slide0")'></iframe>
+      </div>
+      <p id="slideDesc"></p>
+
+   </div>
+
 </body>
 
 <footer>
-   <!-- make this look like a desk -->
-   <!-- tutoring resources -->
-   <button id="notebook" onclick="openBook('notebook')">
-      For Tutors
-   </button>
-
-   <div id="open-notebook">
-      <button onclick="closeBook('notebook')">X</button>
-      <p>
-         Coming soon
-      </p>
-   </div>
-
-   <!-- art samples -->
-   <button id="sketchbook" onclick="openBook('sketchbook')">
-      Art Samples
-   </button>
-
-      <div id="open-sketchbook">
-      <button onclick="closeBook('sketchbook')">X</button>
-      <p>
-         Coming soon
-      </p>
-   </div>
 </footer>
 
 </html>
