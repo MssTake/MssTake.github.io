@@ -10,9 +10,9 @@
 
 <header>
    <!-- Name and LinkedIn -->
-   <a target="_blank" href="https://www.linkedin.com/in/mia-dattis/">
-      <h1>Mia Dattis</h1>
-   </a>
+   <h1>
+      <a target="_blank" href="https://www.linkedin.com/in/mia-dattis/">Mia Dattis</a>
+   </h1>
    <p>Software Engineering Student and digital octopus</p>
 
    <nav>
@@ -37,19 +37,20 @@
             onmouseover='showDescription("compSciDesc", "compSci1")'></iframe>
          <iframe src="https://msstake.github.io/worseForWare"
             onmouseover="showDescription('compSciDesc', 'compSci0')"></iframe>
+         <p id="compSciDesc"></p>
       </div>
-      <p id="compSciDesc"></p>
 
       <!-- Tutoring -->
       <h3 onclick="divShow('tutor')">Tutoring Resources</h3>
       <div class=" gallery" id="tutor">
+         <p id="tutoringDesc"></p>
       </div>
-      <p id="tutoringDesc"></p>
 
       <!-- Spreadsheets -->
       <h3 onclick="divShow('csv')">Fun Spreadsheets</h3>
-      <div class="gallery" id="csv"></div>
-      <p id="csvDesc"></p>
+      <div class="gallery" id="csv">
+         <p id="csvDesc"></p>
+      </div>
    </div>
 
    <!-- Art Div -->
@@ -62,18 +63,22 @@
       <!-- Social Media -->
       <h3 onclick="divShow('socialMed')">Social Media & Marketing</h3>
       <div class="gallery" id="socialMed">
-         <iframe src="Art/Social Media/Mia Dattis - Social Media Sample.MP4"></iframe>
-         <iframe src="Art/Social Media/Mia Dattis - Sample Newsletter.pdf"></iframe>
+         <embed src="Art/Social Media/Mia Dattis - Sample Newsletter.pdf"
+            onmouseover="showDescription('socialMedDesc', 'socialMed2')">
+         <embed src="Art/Social Media/Mia Dattis - Comic Book Day.pdf"
+            onmouseover="showDescription('socialMedDesc', 'socialMed1')">
+         <img src="Art/Social Media/Automotive Engineering and Modification Club.png"
+            onmouseover="showDescription('socialMedDesc', 'socialMed0')">
+         <p id="socialMedDesc"></p>
       </div>
-      <p id="socialMedDesc"></p>
 
       <!-- Digital Art -->
       <h3 onclick="divShow('digiArt')">Digital Art</h3>
       <div class="gallery" id="digiArt">
-         <img src="Art/Digital Art/Mia Dattis - labor.png" onmouseover='showDescription("digiArtDesc", "digiArt1")'>
+         <img src="Art/Digital Art/Mia Dattis - labor.png" onmouseover="showDescription('digiArtDesc', 'digiArt1')">
          <img src="Art/Digital Art/Mia Dattis - melting.png" onmouseover='showDescription("digiArtDesc", "digiArt0")'>
+         <p id="digiArtDesc"></p>
       </div>
-      <p id="digiArtDesc"></p>
 
       <!-- Fiber & Textile Arts -->
       <h3 onclick="divShow('fiberText')">Fiber Art & Textile Arts</h3>
@@ -83,9 +88,9 @@
       <!-- Fun Presentations -->
       <h3 onclick="divShow('slide')">Fun Presentations</h3>
       <div class="gallery" id="slide">
-         <iframe src="Art/Presentations/Old Games.pdf" onmouseover='showDescription("slideDesc", "slide0")'></iframe>
+         <embed src="Art/Presentations/Old Games.pdf" onmouseover='showDescription("slideDesc", "slide0")'>
+         <p id="slideDesc"></p>
       </div>
-      <p id="slideDesc"></p>
 
    </div>
 

@@ -1,28 +1,75 @@
 /* Monospace Headers, Cousine secondary text */
+/* Background: #7d3b57 */
+/* Text: #fff8f0 */
+/* Border: #7c264b */
+/* Accent Details: #550000 */
+/* 392f38 */
 
-a {
-   color: #9abcc5;
+/* General Rules */
+body {
+   background-color: #7d3b57;
+   color: #fff8f0;
+   font-family: monospace;
 }
 
-body {
-   background-color: #392f38;
-   color: gainsboro;
-   font-family: monospace;
+header {
+   /* box-shadow: 1em 1em 1em #392f38; */
+   margin: 1em;
+   padding-bottom: 1em;
+   text-align: center;
+   width: 100%;
+}
+
+/* Headings */
+h1 {
+   color: #fff8f0;
+   font-size: 25px;
+   text-align: center;
+}
+
+h2 {
+   color: #fff8f0;
+}
+
+h3 {
+   color: #fff8f0;
+   transition: .5s;
+}
+
+h3:hover {
+   color: pink;
+}
+
+/* Other */
+a {
+   color: #fff8f0;
+   text-decoration: underline #550000;
+   transition: .5s;
+}
+
+a:hover {
+   color: #550000;
 }
 
 button {
    background: none;
+   border: #7c264b 1px solid;
+   color: #fff8f0;
+   border-radius: 5px;
+   margin: 5px;
    transition: .5s;
+}
+
+button:hover {
+   border: #550000 1px solid;
+   box-shadow: 5px 5px #550000;
 }
 
 div {
    transition: .5s;
 }
 
-header {
-   margin-top: 5em;
-}
-
+embed,
 iframe,
 img {
    border: none;
@@ -30,20 +77,15 @@ img {
    max-width: 100%;
 }
 
-h1 {
-   font-size: 25px;
-   margin-bottom: 5px;
-   text-align: center;
-}
-
 p {
    font-family: cousine;
    font-size: 12.5px;
    margin: 0px;
+   text-wrap: initial;
 }
 
 .carosel {
-   background-color: blueviolet;
+   background-color: #7c264b;
    height: 0;
    left: 0;
    overflow-x: hidden;
@@ -56,7 +98,6 @@ p {
    height: 0;
    left: 0;
    overflow: auto;
-   overflow-x: hidden;
    padding: 10px;
    top: 0;
    white-space: nowrap;
