@@ -10,10 +10,12 @@ function divShow(div) {
    const divStyle = document.getElementById(div).style;
    if (divStyle.height == "100%") {
       divStyle.height = "0";
+      divStyle.visibility = "hidden"
       divStyle.width = "0";
    }
    else {
       divStyle.height = "100%";
+      divStyle.visibility = "visible"
       divStyle.width = "100%";
    }
 }

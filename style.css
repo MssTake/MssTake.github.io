@@ -67,6 +67,9 @@ button:hover {
 
 div {
    transition: .5s;
+   margin: -10px;
+   visibility: hidden;
+   padding: 20px;
 }
 
 embed,
