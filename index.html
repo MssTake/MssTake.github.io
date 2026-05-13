@@ -16,8 +16,8 @@
    <p>Software Engineering Student and digital octopus</p>
 
    <nav>
-      <button onclick="divShow('edu')">Show CS</button>
-      <button onclick="divShow('art')">Show Art</button>
+      <button onclick="showGallery('edu')">Show CS</button>
+      <button onclick="showGallery('art')">Show Art</button>
    </nav>
 </header>
 
@@ -31,23 +31,35 @@
       <a target="_blank" href="Computer Science & Education/Mia Dattis - Resume.pdf">Download Resume</a>
 
       <!-- Comp Sci Projects -->
-      <h3 onclick="divShow('compSci')">Cool Projects</h3>
+      <h3 onclick="showGallery('compSci')">Cool Projects</h3>
       <div class="gallery" id="compSci">
          <iframe src="https://dwalston.github.io/Panther-Lounge-DBS/blob/public/index.html"
-            onmouseover='showDescription("compSciDesc", "compSci1")'></iframe>
-         <iframe src="https://msstake.github.io/worseForWare"
+            onmouseover="showDescription('compSciDesc', 'compSci1')"></iframe>
+         <iframe src=" https://msstake.github.io/worseForWare"
             onmouseover="showDescription('compSciDesc', 'compSci0')"></iframe>
          <p id="compSciDesc"></p>
       </div>
 
       <!-- Tutoring -->
-      <h3 onclick="divShow('tutor')">Tutoring Resources</h3>
+      <h3 onclick="showGallery('tutor')">Tutoring Resources</h3>
       <div class=" gallery" id="tutor">
+         <embed src="Computer Science & Education/Tutoring Resources/Vocabulary & Naming Conventions.pdf"
+            onmouseover="showDescription('tutoringDesc', 'tutoring0')">
          <p id="tutoringDesc"></p>
       </div>
 
+      <!-- Writing Samples -->
+      <h3 onclick="showGallery('csWriting')">Writing Samples</h3>
+      <div class="gallery" id="csWriting">
+         <embed src="Computer Science & Education/Writing Samples/Mia Dattis - Dynamic Testing.pdf"
+            onmouseover="showDescription('csWritingDesc', 'csWriting1')">
+         <embed src="Computer Science & Education/Writing Samples/Mia Dattis - Software Reporting.pdf"
+            onmouseover="showDescription('csWritingDesc', 'csWriting0')">
+         <p id="csWritingDesc"></p>
+      </div>
+
       <!-- Spreadsheets -->
-      <h3 onclick="divShow('csv')">Fun Spreadsheets</h3>
+      <h3 onclick="showGallery('csv')">Fun Spreadsheets</h3>
       <div class="gallery" id="csv">
          <p id="csvDesc"></p>
       </div>
@@ -61,7 +73,7 @@
       <a target="_blank" href="Art/Mia Dattis - Media Resume.pdf">Download Resume</a>
 
       <!-- Social Media -->
-      <h3 onclick="divShow('socialMed')">Social Media & Marketing</h3>
+      <h3 onclick="showGallery('socialMed')">Social Media & Marketing</h3>
       <div class="gallery" id="socialMed">
          <embed src="Art/Social Media/Mia Dattis - Sample Newsletter.pdf"
             onmouseover="showDescription('socialMedDesc', 'socialMed2')">
@@ -73,7 +85,7 @@
       </div>
 
       <!-- Digital Art -->
-      <h3 onclick="divShow('digiArt')">Digital Art</h3>
+      <h3 onclick="showGallery('digiArt')">Digital Art</h3>
       <div class="gallery" id="digiArt">
          <img src="Art/Digital Art/Mia Dattis - labor.png" onmouseover="showDescription('digiArtDesc', 'digiArt1')">
          <img src="Art/Digital Art/Mia Dattis - melting.png" onmouseover='showDescription("digiArtDesc", "digiArt0")'>
@@ -81,15 +93,23 @@
       </div>
 
       <!-- Fiber & Textile Arts -->
-      <h3 onclick="divShow('fiberText')">Fiber Art & Textile Arts</h3>
+      <h3 onclick="showGallery('fiberText')">Fiber Art & Textile Arts</h3>
       <div class="gallery" id="fiberText"></div>
       <p id="fiberTextDesc"></p>
 
-      <!-- Fun Presentations -->
-      <h3 onclick="divShow('slide')">Fun Presentations</h3>
+      <!-- Slideshows -->
+      <h3 onclick="showGallery('slide')">Fun Presentations</h3>
       <div class="gallery" id="slide">
          <embed src="Art/Presentations/Old Games.pdf" onmouseover='showDescription("slideDesc", "slide0")'>
          <p id="slideDesc"></p>
+      </div>
+
+      <!-- Writing Samples -->
+      <h3 onclick="showGallery('artWriting')">Writing Samples</h3>
+      <div class="gallery" id="artWriting">
+         <embed src="Art/Creative Writing/The Little Mermaid.pdf"
+            onmouseover="showDescription('artWritingDesc', 'artWriting0')">
+         <p id="artWritingDesc"></p>
       </div>
    </div>
 
